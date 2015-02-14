@@ -9,15 +9,36 @@ $(document).ready(function() {
       $('#search_form').attr('action', "[% c.uri_for('/') %]"
         + target.toLowerCase() + "/search");
       if ('Hall' == target) {
-        Calendar.setup( {
+	$('#hall-date').datepicker ({
+	  	dateFormat: "yy-mm-dd",
+		showOn: "button",
+	      	buttonImage: "/static/images/cal4.jpg",
+	      	buttonImageOnly: true,
+	      	buttonText: "Select date"
+	} );
+        /*Calendar.setup( {
             inputField      :       "hall-date",
             ifFormat        :       "%Y-%m-%d",
             button          :       "dtPicker",
             align           :       "Bl",
             singleClick     :       true
-        } );
+        } );*/
       } else {
-        Calendar.setup( {
+	$('#checkin-date').datepicker ({
+		dateFormat: "yy-mm-dd",
+		showOn: "button",
+	      	buttonImage: "/static/images/cal4.jpg",
+	      	buttonImageOnly: true,
+	      	buttonText: "Select date"
+	} );
+	$('#checkout-date').datepicker ({
+		dateFormat: "yy-mm-dd",
+		showOn: "button",
+	      	buttonImage: "/static/images/cal4.jpg",
+	      	buttonImageOnly: true,
+	      	buttonText: "Select date"
+	} );
+       /*Calendar.setup( {
             inputField      :       "checkin-date",
             button          :       "dtCheckinPicker",
             ifFormat        :       "%Y-%m-%d",
@@ -30,7 +51,7 @@ $(document).ready(function() {
             ifFormat        :       "%Y-%m-%d",
             align           :       "Bl",
             singleClick     :       true
-        } );
+        } );*/
         $('select.checkin_t').change(function() {
           var hh = $('#checkin_hh').val();
           var mm = $('#checkin_mm').val();
