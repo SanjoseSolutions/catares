@@ -27,3 +27,23 @@ table.billing td {
 table.billing td a {
   font-family: 'Times New Roman', Times, serif;
 }
+/*responsive*/
+@media all and (min-width: 300px) and (max-width: 700px) {
+  #billings { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    border-spacing: 0;
+    width: 250px;
+  } 
+}
+@media all and (min-width: 100px) and (max-width: 299px) {
+  #billings { 
+    margin: 0;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0;
+    width: 150px;
+  } 
+}
+
