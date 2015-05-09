@@ -59,4 +59,9 @@
   padding: 0.3em;
   margin: 3px 3px 0 0;
 }
+@media all and (min-width: 400px) {
+  .nav .menu ul li {
+    width: 45%;
+  }
+} 
 
