@@ -350,11 +350,126 @@ color:#1a1a1a !important;
 	border-top:1px dotted #CCCCCC;
 }
 
+
 /* Drop Shadows */
 #bottom{
 	visibility:visible;
 }
+div.billing {
+  width: 20%
+  display: inline-block;
+}
+ /* Responsive */
+@media all and (min-width: 790px) and (max-width: 1024px) {
+ 
+ body header,
+ body div#container,
+ div.footer {
+   width: 80%;
+ } 
+}
+@media all and (min-width: 790px) {
+  div#container, #footer, #central, #search_form, {
+    width: 80%;
+  }
+}
 
+@media all and (min-width: 400px) and (max-width: 790px) {
+  body header,
+  body div#container,
+  div.footer {
+    width: 80%;
+  } 
+}
+@media all and (min-width: 50px) and (max-width: 400px) {
+  body header, body div#container, div.footer {
+   width: 95%;
+  }
+  h1 img {
+    width: 50%;
+  }
+  #header {
+    width: 30%;
+  }
+}
+/*@media all and (min-width: 300px) and (max-width: 650px) {
+  table .responsive { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    border-spacing: 0;
+    width: 100px;
+  } 
+}*/
+@media all and (min-width: 300px) and (max-width: 700px) {
+.likert table, .likert th, .likert td {
+	width: 200px;
+}
+}
+@media all and (min-width: 90px) and (max-width: 299px) {
+.likert table, .likert th, .likert td {
+	width: 150px;
+}
+}
+
+/*@media all and (min-width: 300px) and (max-width: 350px) {
+  .likert table, .likert th, .likert td { 
+    margin: 1px 1px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0;
+  }
+  .likert table {
+    width: 180px;
+  } 
+}*/
+/*@media all and (min-width: 90px) and (max-width: 299px) {
+  .likert th, .likert td { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0;
+  } 
+  .likert table {
+    width: 190px;
+  }
+}*/
+/*@media all and (min-width: 50px) and (max-width: 219px) {
+  .likert th, .likert td { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0;
+  } 
+  .likert table {
+    width: 130px;
+  }
+}*/
+/*@media all and (min-width: 300px) and (max-width: 700px) {
+  .likert table { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    border-spacing: 0;
+    width: 250px;
+  } 
+}*/
+/*@media all and (min-width: 100px) and (max-width: 299px) {
+  .likert table { 
+    margin: 0;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 1px 1px;
+    border-spacing: 0;
+    width: 90px;
+  } 
+}*/
+/*@media all and (min-width: 100px) and (max-width: 299px) {
+  .wufoo input .text {
+    overflow-x: auto;
+		display: block;
+		width: 30px
+  }
+}*/
 /* - - - Local Fonts - - - */
 
 /* - - - Custom Theme - - - */

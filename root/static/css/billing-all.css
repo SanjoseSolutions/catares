@@ -1,7 +1,7 @@
 #billings {
   margin: 5px 10px;
   border: 1px solid #aaa;
-  border-width: 1px 1px 0 0;
+  border-width: 1px 1px 1px 1px;
   border-spacing: 0;
   width: 500px;
 }
@@ -16,4 +16,22 @@
   border-width: 0 0 1px 1px;
   padding: 3px 4px;
   text-align: center;
+}
+/*@media screen and (max-width: 640px) {
+	#billings th, #billings td {
+		overflow-x: auto;
+		display: block;
+		width: 80%;
+		margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-spacing: 0;
+	}
+	table {
+	  width: 20%;
+	}
+}*/
+@media all and (min-width: 100px) and (max-width: 299px) {
+  #billings {
+    width: 170px;
+  }
 }

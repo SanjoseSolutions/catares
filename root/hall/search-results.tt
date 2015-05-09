@@ -30,7 +30,7 @@ li.likert table th {
 [% END %]
 <ul>
 <li class="likert">
-<table cellspacing="0">
+<table cellspacing="0" class="responsive">
   <caption>
   [% UNLESS halls.count %]<a href="[% c.uri_for('/') %]">Search Again?</a>[% END %]
   </caption>
