@@ -85,3 +85,16 @@ input.button:hover, input.submit:hover,
 input[type="button"]:hover, input[type="submit"]:hover {
   background-color: #f0f0f0;
 }
+/*responsive*/
+@media all and (min-width: 100px) and (max-width: 299px) {
+  input.button, input[type="submit"]{ 
+    overflow-x: auto;
+		display: block;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 299px) {
+  input.button, input[type="submit"] {
+    width: 100px;
+  }
+}
+

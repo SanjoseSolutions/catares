@@ -604,6 +604,7 @@ form li.leftFifth, form li.middleFifth {
 	clear:none !important;
 	float:left;
 }
+
 form li.rightHalf, form li.rightThird, form li.rightFourth, form li.rightFifth{
 	clear:none !important;
 	float:right;
@@ -1126,3 +1127,46 @@ form li.complex p.error{
 	font-weight:normal;
 	font-size:160%;
 }
+
+/*responsive*/
+@media all and (min-width: 50px) and (max-width: 400px){
+  form ul li.rightHalf {
+    width: 97% !important;
+  }
+}
+/*@media all and (min-width: 300px) and (max-width: 650px) {
+  table .responsive { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    border-spacing: 0;
+    width: 200px;
+  } 
+}
+@media all and (min-width: 90px) and (max-width: 299px) {
+  table .responsive { 
+    margin: 5px 10px;
+    border: 1px solid #aaa;
+    border-width: 1px 1px 0 0;
+    border-spacing: 0;
+    width: 100px;
+  } 
+}*/
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+@media all and (min-width: 100px) and (max-width: 299px) {  
+  table {
+    overflow-x: auto;
+		display: block;
+	}
+}
+@media all and (min-width: 100px) and (max-width: 299px) {
+  form #username, #password {
+    width: 40px; 
+  }
+}
+ 
